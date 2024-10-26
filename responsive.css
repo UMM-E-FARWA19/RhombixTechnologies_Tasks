@@ -1,0 +1,343 @@
+/* Styles for larger screens (desktops and laptops) */
+/* header */
+@media (min-width: 1024px) {
+    header {
+      padding: 20px 50px; 
+    }
+  
+    nav ul li a {
+      font-size: 18px; 
+      
+    }
+  }
+  
+ /* Styles for tablet screens */
+@media (max-width: 1024px) and (min-width: 768px) {
+    header {
+      padding: 20px 40px;
+      background-color: #2b003f; 
+    }
+  
+    nav ul {
+      gap: 20px; 
+      justify-content: space-between; 
+    }
+  
+    nav ul li a {
+      font-size: 18px; 
+      color: #ffffff; 
+      transition: color 0.3s ease; 
+    }
+  
+    nav ul li a:hover {
+      color: #ff4b4b; 
+    }
+    .hero{
+      margin-top: 10%;
+    }
+  }
+/* Styles for mobile screens */
+@media (max-width: 768px) {
+    header {
+     
+      align-items: center;
+      padding: 15px; 
+      background-color: #4e0066; 
+    }
+  
+    .logo img {
+      width: 120px; 
+    }
+  
+    nav ul {
+      flex-direction: column; 
+      width: 100%; 
+      align-items: center; 
+      padding: 0; 
+    }
+  
+    nav ul li {
+      width: 100%; 
+      text-align: center; 
+      border-bottom: 1px solid #c0c0c0;
+    }
+  
+    nav ul li:last-child {
+      border-bottom: none; 
+    }
+  
+    nav ul li a {
+      padding: 15px 0; 
+      display: block; 
+      font-size: 16px;
+      color: #ffffff; 
+    }
+  
+    nav ul li a:hover {
+      background-color: #ff4b4b; 
+      color: #fff; 
+    }
+    
+  }
+    
+/* home page */
+/* Styles for larger screens (desktops and laptops) */
+@media (min-width: 1024px) {
+    .hero {
+      padding: 50px; 
+   
+    }
+  
+    .hero-text h1 {
+      font-size: 55px; 
+    }
+  
+    .hero-text p {
+      font-size: 22px; 
+    }
+  
+    .hero-image img {
+      width: 320px; 
+    }
+  
+    .experience {
+      bottom: 50px; 
+      right: 50px; 
+    }
+  }
+  
+ 
+  /* Mobile Styles (up to 767px) */
+@media (max-width: 767px) {
+   main{
+    margin-top: 17%;
+   } .hero {
+      flex-direction: column; 
+      padding: 20px; 
+      align-items: center; 
+    }
+    .contact-button{
+        margin-top: 20px;
+    }
+    .hero-text {
+       
+      text-align: center; 
+      margin-bottom: 15px;
+      
+    }
+  
+    .hero-text h1 {
+      font-size: 32px; 
+    }
+  
+    .hero-text p {
+      font-size: 18px; 
+    }
+  
+    .social-icons {
+      justify-content: center; 
+      margin-top: 10px; 
+    }
+  
+    .social-icons a {
+      font-size: 24px; 
+    }
+  
+    .hero-image img {
+      width: 100%; 
+      max-width: 300px; 
+      margin-top: 15px; 
+    }
+  
+    .experience {
+      position: relative; 
+      margin-top: 10px; 
+      padding: 8px 15px; 
+    }
+  
+    .modal-content {
+      width: 90%; 
+      max-width: 300px;
+    }
+  
+    .modal {
+      padding: 10px; 
+    }
+  }
+  /* ABOUT ME SECTION */
+/* Styles for laptops/desktops  */
+@media (min-width: 1025px) {
+  .about {
+    padding: 60px 100px; 
+  }
+
+  .about-content {
+    flex-direction: row; 
+  }
+}
+
+/* Styles for tablets */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .about {
+    padding: 40px 50px; 
+  }
+
+  .about-content {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .about-content img {
+    width: 300px; 
+  }
+
+  .about nav ul {
+    flex-wrap: wrap; 
+  }
+}
+
+/* Styles for mobile screens */
+@media (max-width: 768px) {
+  .about {
+    padding: 20px 30px; 
+  }
+
+  .about-content {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .about-content img {
+    width: 100%; 
+    max-width: 250px; 
+  }
+
+  .description h3 {
+    font-size: 24px; 
+  }
+
+  .description p {
+    font-size: 16px; 
+  }
+
+  nav ul {
+    flex-direction: column; 
+    width: 100%; 
+  }
+
+  nav ul li {
+    width: 100%; 
+    text-align: center; 
+  }
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes textGlow {
+  0% {
+    text-shadow: 0 0 10px #ff4b4b, 0 0 20px #ff4b4b;
+  }
+  100% {
+    text-shadow: 0 0 20px #ff4b4b, 0 0 30px #ff4b4b;
+  }
+}
+/* skills section */
+/* Laptop Screens (1024px to 1440px) */
+@media screen and (max-width: 1440px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .skills {
+    gap: 20px;
+  }
+}
+
+/* Tablet Screens (768px to 1023px) */
+@media screen and (max-width: 1023px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .content {
+    font-size: 1.1rem;
+  }
+
+  .skills {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .skill-card img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Mobile Screens (Below 768px) */
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .content {
+    font-size: 1rem;
+  }
+
+  .skills {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+
+  .skill-card {
+    padding: 15px;
+  }
+
+  .skill-card img {
+    width: 100px;
+    height: 60px;
+  }
+}
+
